@@ -90,6 +90,11 @@ func NewScanner(target []string, opt Scanner) error {
 		DisableOutputHtml:  s.DisableOutputHtml,
 	}
 
+	options.Config = &config.Config{}
+	options.Config.Reverse.Jndi.JndiAddress = s.JndiAddress
+	options.Config.Reverse.Jndi.LdapPort = s.LdapPort
+	options.Config.Reverse.Jndi.ApiPort = s.ApiPort
+
 	config, err := config.NewConfig()
 	if err != nil {
 		return err
