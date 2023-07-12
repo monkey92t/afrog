@@ -99,12 +99,12 @@ func NewScanner(target []string, opt Scanner) error {
 	options.Config.Reverse.Jndi.LdapPort = opt.LdapPort
 	options.Config.Reverse.Jndi.ApiPort = opt.ApiPort
 
-	config, err := config.NewConfig()
-	if err != nil {
-		return err
-	}
+	// config, err := config.NewConfig()
+	// if err != nil {
+	// 	return err
+	// }
 
-	options.Config = config
+	// options.Config = config
 
 	r, err := runner.NewRunner(options)
 	if err != nil {
