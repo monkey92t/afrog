@@ -4,8 +4,8 @@ import (
 	"os"
 	"path/filepath"
 
+	"github.com/monkey92t/afrog/v2/pkg/utils"
 	"github.com/pkg/errors"
-	"github.com/zan8in/afrog/pkg/utils"
 	"gopkg.in/yaml.v2"
 )
 

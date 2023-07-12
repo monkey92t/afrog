@@ -6,11 +6,11 @@ import (
 	"sync"
 	"time"
 
+	"github.com/monkey92t/afrog/v2/pkg/config"
+	"github.com/monkey92t/afrog/v2/pkg/poc"
+	"github.com/monkey92t/afrog/v2/pkg/protocols/http/retryhttpclient"
+	"github.com/monkey92t/afrog/v2/pkg/result"
 	"github.com/panjf2000/ants/v2"
-	"github.com/zan8in/afrog/pkg/config"
-	"github.com/zan8in/afrog/pkg/poc"
-	"github.com/zan8in/afrog/pkg/protocols/http/retryhttpclient"
-	"github.com/zan8in/afrog/pkg/result"
 )
 
 var CheckerPool = sync.Pool{
@@ -95,7 +95,7 @@ func (runner *Runner) executeExpression(target string, poc *poc.Poc) {
 	defer runner.engine.ReleaseChecker(c)
 
 	defer func() {
-		// https://github.com/zan8in/afrog/issues/7
+		// https://github.com/monkey92t/afrog/v2/issues/7
 		if r := recover(); r != nil {
 			c.Result.IsVul = false
 			runner.OnResult(c.Result)

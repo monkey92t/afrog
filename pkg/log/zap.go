@@ -1,4 +1,4 @@
-// This is a wrapper for the zap framework
+// Package log This is a wrapper for the zap framework
 // no SugerLogger, Only Logger
 // @author: 胖胖的ALEX
 // example:

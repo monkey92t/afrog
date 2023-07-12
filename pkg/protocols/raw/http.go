@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/zan8in/afrog/pkg/proto"
-	"github.com/zan8in/afrog/pkg/protocols/http/retryhttpclient"
+	"github.com/monkey92t/afrog/v2/pkg/proto"
+	"github.com/monkey92t/afrog/v2/pkg/protocols/http/retryhttpclient"
 	"github.com/zan8in/rawhttp"
 )
 

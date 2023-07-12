@@ -242,6 +242,6 @@ func defaultHeader() string {
 		</script>
 	</head>
 	<body>
-	<div class="top">&nbsp;&nbsp;afrog-Report&nbsp;&nbsp;&nbsp;<a href="https://github.com/zan8in/afrog#%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E" target="_blank" style="font-size:12px;color:darkorange"><i>Disclaimer</i></a>&nbsp;&nbsp;&nbsp;<span style="font-size:12px;font-weight:normal;color:darkgrey">` + timeutil.Format(timeutil.FormatFullDate) + `</span></div>
+	<div class="top">&nbsp;&nbsp;afrog-Report&nbsp;&nbsp;&nbsp;<a href="https://github.com/monkey92t/afrog#%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E" target="_blank" style="font-size:12px;color:darkorange"><i>Disclaimer</i></a>&nbsp;&nbsp;&nbsp;<span style="font-size:12px;font-weight:normal;color:darkgrey">` + timeutil.Format(timeutil.FormatFullDate) + `</span></div>
 			`
 }

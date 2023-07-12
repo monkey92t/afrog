@@ -3,8 +3,8 @@ package config
 import (
 	"fmt"
 
-	"github.com/zan8in/afrog/pkg/log"
-	"github.com/zan8in/afrog/pkg/utils"
+	"github.com/monkey92t/afrog/v2/pkg/log"
+	"github.com/monkey92t/afrog/v2/pkg/utils"
 	"github.com/zan8in/gologger"
 )
 

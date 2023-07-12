@@ -7,11 +7,11 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/zan8in/afrog/pkg/log"
-	"github.com/zan8in/afrog/pkg/output"
-	"github.com/zan8in/afrog/pkg/poc"
-	"github.com/zan8in/afrog/pkg/utils"
-	"github.com/zan8in/afrog/pocs"
+	"github.com/monkey92t/afrog/v2/pkg/log"
+	"github.com/monkey92t/afrog/v2/pkg/output"
+	"github.com/monkey92t/afrog/v2/pkg/poc"
+	"github.com/monkey92t/afrog/v2/pkg/utils"
+	"github.com/monkey92t/afrog/v2/pocs"
 	"github.com/zan8in/goflags"
 	"github.com/zan8in/gologger"
 	sliceutil "github.com/zan8in/pins/slice"
@@ -265,7 +265,7 @@ func (opt *Options) verifyOptions() error {
 		configDir := strings.ReplaceAll(homeDir+"/.config/afrog/afrog-config.yaml", "\\", "/")
 		gologger.Info().Msg("The reverse connection platform is not configured, which may affect the validation of certain RCE PoCs")
 		gologger.Info().Msgf("Go to [%s] to configure the reverse connection platform\n", configDir)
-		gologger.Info().Msg("Tutorial: https://github.com/zan8in/afrog/wiki/Configuration")
+		gologger.Info().Msg("Tutorial: https://github.com/monkey92t/afrog/v2/wiki/Configuration")
 		gologger.Print().Msg("")
 	}
 

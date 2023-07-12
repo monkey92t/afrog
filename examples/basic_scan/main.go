@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/zan8in/afrog"
+	"github.com/monkey92t/afrog/v2"
 )
 
 func main() {

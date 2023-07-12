@@ -13,9 +13,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/zan8in/afrog/pkg/poc"
-	"github.com/zan8in/afrog/pkg/proto"
-	"github.com/zan8in/afrog/pkg/utils"
+	"github.com/monkey92t/afrog/v2/pkg/poc"
+	"github.com/monkey92t/afrog/v2/pkg/proto"
+	"github.com/monkey92t/afrog/v2/pkg/utils"
 	"github.com/zan8in/retryablehttp"
 	"golang.org/x/net/context"
 )
@@ -177,7 +177,7 @@ func Request(target string, rule poc.Rule, variableMap map[string]any) error {
 
 	// respbody gbk to utf8 encoding
 	utf8RespBody := utils.Str2UTF8(string(respBody))
-	// utf8RespBody := string(respBody) // fixed issue with https://github.com/zan8in/afrog/issues/68
+	// utf8RespBody := string(respBody) // fixed issue with https://github.com/monkey92t/afrog/v2/issues/68
 
 	// store the response
 	protoResp := &proto.Response{}

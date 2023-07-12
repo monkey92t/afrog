@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 
-	"github.com/zan8in/afrog/pkg/report"
-	"github.com/zan8in/afrog/pkg/result"
+	"github.com/monkey92t/afrog/v2/pkg/report"
+	"github.com/monkey92t/afrog/v2/pkg/result"
 )
 
 func main() {

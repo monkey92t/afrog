@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/monkey92t/afrog/v2/pkg/protocols/http/retryhttpclient"
+	"github.com/monkey92t/afrog/v2/pkg/utils"
 	"github.com/remeh/sizedwaitgroup"
-	"github.com/zan8in/afrog/pkg/protocols/http/retryhttpclient"
-	"github.com/zan8in/afrog/pkg/utils"
 )
 
 func (r *Runner) monitorTargets() {
