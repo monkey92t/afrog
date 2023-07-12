@@ -36,6 +36,10 @@ type Scanner struct {
 	Proxy              string
 	MaxRespBodySize    int
 	DisableOutputHtml  bool
+
+	JndiAddress string
+	LdapPort    string
+	ApiPort     string
 }
 
 func NewScanner(target []string, opt Scanner) error {
