@@ -95,9 +95,9 @@ func NewScanner(target []string, opt Scanner) error {
 	}
 
 	options.Config = &config.Config{}
-	options.Config.Reverse.Jndi.JndiAddress = s.JndiAddress
-	options.Config.Reverse.Jndi.LdapPort = s.LdapPort
-	options.Config.Reverse.Jndi.ApiPort = s.ApiPort
+	options.Config.Reverse.Jndi.JndiAddress = opt.JndiAddress
+	options.Config.Reverse.Jndi.LdapPort = opt.LdapPort
+	options.Config.Reverse.Jndi.ApiPort = opt.ApiPort
 
 	config, err := config.NewConfig()
 	if err != nil {
